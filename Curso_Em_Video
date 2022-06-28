@@ -1,0 +1,28 @@
+# ALUGUEL DE CARRO
+
+dias = int(input('Quantos dias o veiculo ficou alugado? '))
+km = float(input('Quantos quilometros foram rodados com o veiculo? KM '))
+total_a_pagar = (dias * 60 + km * 0.15)
+print('Levando em consideração os {} dias alugados e os {:.2f} KM rodados, o valor total a pagar é de R${:.2f}. '.format(dias, km, total_a_pagar))
+print('')
+
+# Cauculando um desconto de um produto
+
+valor_original = float(input(('Digite o valor do produto que recebrá o desconto. R$  ')))
+valor_com_desconto = valor_original - (valor_original*18/100)
+print('O produto no valor de R$ {:.2f} com 18% de desconto passará a custar {:.1f}'.format(valor_original, valor_com_desconto))
+print('')
+
+# Mostrando a raiz quadrada de um numero
+
+from math import sqrt, floor, ceil
+
+var = float(input(('Informe um valor para saber sua raiz quadrada. ')))
+var2 = sqrt(var)
+print(' A raiz quadrada de {} é equivalente a {:.2f}'. format(var, var2))
+
+# Aplicando um reajuste salarial
+
+salario_atual = float(input(('Informe seu salário atual: R$ ')))
+salario_ajustado = salario_atual + (salario_atual*12.5/100)
+print('Levando em consideração o salario de R$ {} com um reajuste de 12.5% o mesmo passará a valer R$ {}'.format(salario_atual, salario_ajustado))
